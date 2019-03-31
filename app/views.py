@@ -84,6 +84,7 @@ def upload():
         else:
             error = form_errors(form)
             return jsonify({'error': error})
+    
 
 @app.errorhandler(404)
 def page_not_found(error):
